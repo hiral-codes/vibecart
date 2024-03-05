@@ -5,6 +5,7 @@ import { CiSearch } from "react-icons/ci";
 import { CgProfile } from "react-icons/cg";
 import { GoHeart } from "react-icons/go";
 import { BsCart3 } from "react-icons/bs";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 function Header() {
   return (
@@ -45,7 +46,7 @@ function Header() {
           </div>
         </ul>
       </nav>
-      <div className="profile flex gap-1 sm:gap-2 items-center">
+      <div className="hidden sm:flex md:flex lg:flex profile gap-1 sm:gap-2 items-center">
         <Link to="/profile">
         <CgProfile className="text-3xl cursor-pointer" />
         </Link>
@@ -56,6 +57,9 @@ function Header() {
           <BsCart3 className="text-3xl cursor-pointer" />
         </Link>
       </div>
+        <div className="text-4xl sm:hidden md:hidden lg:hidden">
+        <GiHamburgerMenu/>
+        </div>
     </div>
   );
 }
