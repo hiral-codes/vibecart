@@ -8,7 +8,7 @@ import { BsCart3 } from "react-icons/bs";
 
 function Header() {
   return (
-    <div className="header bg-white z-50 shadow px-10 flex items-center justify-between fixed top-0 left-0 right-0">
+    <div className="header bg-white z-50 shadow px-4 sm:px-6 md:px-8 lg:px-10 flex items-center justify-between fixed top-0 left-0 right-0">
       <div className="logo w-48 p-2">
         <Link to="/">
           <img src={logo} alt="logo" className="min-h-14" />
@@ -45,7 +45,7 @@ function Header() {
           </div>
         </ul>
       </nav>
-      <div className="profile flex gap-4 items-center">
+      <div className="profile flex gap-1 sm:gap-2 items-center">
         <Link to="/profile">
         <CgProfile className="text-3xl cursor-pointer" />
         </Link>
